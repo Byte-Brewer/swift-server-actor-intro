@@ -1,0 +1,14 @@
+<head>
+    <title>Hello, #(name)</title>
+    <style>
+        body { background-color: #fff; }
+        h1 { color: blue; }
+        p { color: red; }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello, #(ip) #(socketInfo)!</h1>
+        <h1 style="color:red; font-size:30px;">#(time)</h1>
+    </div>
+</body>

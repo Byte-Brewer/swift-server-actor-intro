@@ -3,29 +3,20 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Run your Executable",
-            "program": "${workspaceFolder}/server-app/.build/debug/ServerApp",
+            "name": "Debug Run (server-app)",
+            "program": "${workspaceFolder:workspace}/server-app/.build/debug/Run",
             "args": [],
-            "cwd": "${workspaceFolder}/server-app",
+            "cwd": "${workspaceFolder:workspace}/server-app",
             "preLaunchTask": "swift-build"
         },
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug ServerApp (server-app)",
-            "program": "${workspaceFolder:workspace}/server-app/.build/debug/ServerApp",
+            "name": "Release Run (server-app)",
+            "program": "${workspaceFolder:workspace}/server-app/.build/release/Run",
             "args": [],
             "cwd": "${workspaceFolder:workspace}/server-app",
-            "preLaunchTask": "swift: Build Debug ServerApp (server-app)"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Release ServerApp (server-app)",
-            "program": "${workspaceFolder:workspace}/server-app/.build/release/ServerApp",
-            "args": [],
-            "cwd": "${workspaceFolder:workspace}/server-app",
-            "preLaunchTask": "swift: Build Release ServerApp (server-app)"
+            "preLaunchTask": "swift-build"
         }
     ]
 }
