@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <h1>Hello, #(ip) #(socketInfo)!</h1>
+        <h1>Hello, #(ip)!</h1>
         <h1 style="color:red; font-size:30px;">#(time)</h1>
     </div>
 </body>
