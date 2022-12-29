@@ -9,5 +9,5 @@ FROM ubuntu:focal
 WORKDIR /run
 COPY --from=build /build/.build/release /run
 COPY --from=build /usr/lib/swift/ /usr/lib/swift/
-COPY --from=build /build/Public /run/Public
+
 ENTRYPOINT ["./Run"]
