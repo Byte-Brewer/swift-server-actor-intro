@@ -2,7 +2,7 @@ FROM swift:5.7-focal as build
 WORKDIR /build
 COPY . .
 RUN swift package resolve
-RUN swift build -c release -Xswiftc -g
+RUN swift build -c release
 
 # Run image
 FROM ubuntu:focal
